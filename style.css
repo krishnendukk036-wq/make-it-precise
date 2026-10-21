@@ -682,3 +682,16 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+/* MIP Global Support — consistent flag display */
+
+.country-card > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  min-height: 32px;
+  font-family: "Segoe UI Emoji", "Apple Color Emoji",
+    "Noto Color Emoji", sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+}
