@@ -256,3 +256,119 @@ footer a {
   }
 }
 
+/* MIP — Global Accounting Services */
+
+.global-services {
+  padding: 80px 7%;
+  background: #f7f5ef;
+  color: #173f32;
+}
+
+.global-services .section-heading {
+  max-width: 720px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.global-services .eyebrow {
+  color: #b49352;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+
+.global-services .section-heading h2 {
+  color: #173f32;
+  font-size: clamp(30px, 5vw, 44px);
+  margin: 0 0 18px;
+}
+
+.global-services .section-heading p {
+  line-height: 1.8;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.country-card {
+  background: #ffffff;
+  border: 1px solid #e2d5b6;
+  border-top: 4px solid #c6a568;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(23, 63, 50, 0.06);
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(23, 63, 50, 0.12);
+}
+
+.country-flag {
+  font-size: 34px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.country-card h3 {
+  color: #173f32;
+  font-size: 23px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+.country-card > p {
+  color: #a18346;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.country-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.country-card li {
+  color: #555d57;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 900px) {
+  .country-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 550px;
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .global-services {
+    padding: 55px 20px;
+  }
+
+  .country-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .country-card {
+    padding: 24px;
+  }
+
+  .country-card h3 {
+    font-size: 21px;
+  }
+}
+
