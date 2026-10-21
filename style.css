@@ -962,3 +962,59 @@ footer a {
     margin: 10px 0;
   }
 }
+/* MIP — Improve readability of global service cards */
+
+.global-services .section-heading > p {
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+.country-card {
+  padding: 34px;
+}
+
+.country-card h3 {
+  font-size: 26px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.country-card > p {
+  font-size: 19px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.country-card ul {
+  padding-left: 24px;
+}
+
+.country-card li {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 8px;
+}
+
+/* Keep text comfortable on mobile too */
+@media (max-width: 650px) {
+  .global-services .section-heading > p {
+    font-size: 16px;
+  }
+
+  .country-card {
+    padding: 24px;
+  }
+
+  .country-card h3 {
+    font-size: 23px;
+  }
+
+  .country-card > p {
+    font-size: 17px;
+  }
+
+  .country-card li {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
