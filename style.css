@@ -490,3 +490,92 @@ footer a {
 }
 
 
+/* MIP — Final Alignment Refinements */
+
+/* Centre the hero content */
+.hero {
+  text-align: center;
+  align-items: center;
+}
+
+.hero > *,
+.hero .hero-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero h1 {
+  text-align: center;
+}
+
+.hero .hero-description {
+  max-width: 520px;
+}
+
+.hero .hero-bottom {
+  text-align: center;
+  width: 100%;
+}
+
+/* Centre the About section */
+.about-section {
+  text-align: center;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.about-section .about-text {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.9;
+}
+
+.about-section .gold-button {
+  display: inline-block;
+}
+
+/* Make top contacts easier to read */
+.top-contact-bar {
+  justify-content: center;
+  gap: 12px 28px;
+  padding: 14px 4%;
+}
+
+.top-contact-bar a {
+  font-size: 13px;
+}
+
+/* Keep footer details in horizontal rows */
+#footer {
+  text-align: center;
+  padding: 45px 5%;
+}
+
+#footer > p:not(.eyebrow):not(.copyright) {
+  display: inline-block;
+  vertical-align: top;
+  margin: 18px 22px;
+  line-height: 2;
+}
+
+#footer .copyright {
+  margin-top: 28px;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-section {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  #footer > p:not(.eyebrow):not(.copyright) {
+    display: block;
+    margin: 18px auto;
+  }
+}
