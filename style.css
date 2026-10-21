@@ -609,3 +609,29 @@ footer {
     gap: 5px;
   }
 }
+/* Clearer contact banner */
+.topbar {
+  font-size: 13px;
+  padding: 12px 5%;
+}
+
+.top-contact {
+  gap: 12px 22px;
+}
+
+.top-location {
+  font-size: 13px;
+}
+
+/* Larger MIP logo */
+.brand img {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+}
+
+/* More readable navigation */
+.navbar nav a {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
