@@ -842,3 +842,123 @@ footer a {
   }
 }
 
+/* MIP — Catchy, responsive brand heading */
+
+.hero {
+  text-align: center;
+  align-items: center;
+}
+
+.hero .brand-name {
+  width: 100%;
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.hero .brand-tagline {
+  width: min(100%, 800px);
+  align-self: center;
+  text-align: right;
+  font-size: clamp(13px, 1.5vw, 17px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c6a568;
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-right: 4px;
+}
+
+.hero .services {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: clamp(28px, 3.5vw, 42px);
+  line-height: 1.25;
+}
+
+@media (max-width: 650px) {
+  .hero .brand-name {
+    font-size: 34px;
+    letter-spacing: 0;
+  }
+
+  .hero .brand-tagline {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    padding-right: 2px;
+  }
+
+  .hero .services {
+    font-size: 11px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+/* MIP — Horizontal footer layout */
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px 28px;
+  padding: 55px 7% 30px;
+  align-items: start;
+}
+
+#footer > .eyebrow,
+#footer > h2,
+#footer > p:nth-of-type(1),
+#footer > .copyright {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#footer > p:not(.eyebrow):not(.copyright) {
+  width: auto;
+  min-width: 0;
+  margin: 12px 0;
+  text-align: center;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+#footer > p strong {
+  display: block;
+  color: #c6a568;
+  margin-bottom: 8px;
+}
+
+#footer > p a {
+  display: inline-block;
+  color: #c6a568;
+  overflow-wrap: anywhere;
+}
+
+#footer .copyright {
+  padding-top: 20px;
+  margin-top: 18px;
+  border-top: 1px solid rgba(198, 165, 104, 0.3);
+}
+
+@media (max-width: 650px) {
+  #footer {
+    grid-template-columns: 1fr;
+    padding: 40px 7% 25px;
+    gap: 8px;
+  }
+
+  #footer > p:not(.eyebrow):not(.copyright) {
+    grid-column: 1 / -1;
+    margin: 10px 0;
+  }
+}
