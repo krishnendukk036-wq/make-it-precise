@@ -256,12 +256,13 @@ footer a {
   }
 }
 
-/* MIP — Global Accounting Services */
+
+/* MIP — Global Accounting Support */
 
 .global-services {
   padding: 80px 7%;
-  background: #f7f5ef;
-  color: #173f32;
+  background: #173f32;
+  color: #ffffff;
 }
 
 .global-services .section-heading {
@@ -271,7 +272,7 @@ footer a {
 }
 
 .global-services .eyebrow {
-  color: #b49352;
+  color: #c6a568;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -279,12 +280,13 @@ footer a {
 }
 
 .global-services .section-heading h2 {
-  color: #173f32;
+  color: #ffffff;
   font-size: clamp(30px, 5vw, 44px);
   margin: 0 0 18px;
 }
 
-.global-services .section-heading p {
+.global-services .section-heading > p:last-child {
+  color: #e4e9e5;
   line-height: 1.8;
 }
 
@@ -298,18 +300,12 @@ footer a {
 
 .country-card {
   background: #ffffff;
-  border: 1px solid #e2d5b6;
+  color: #173f32;
+  border: 1px solid #c6a568;
   border-top: 4px solid #c6a568;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 8px 25px rgba(23, 63, 50, 0.06);
-  transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
-}
-
-.country-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 32px rgba(23, 63, 50, 0.12);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .country-flag {
@@ -370,5 +366,7 @@ footer a {
   .country-card h3 {
     font-size: 21px;
   }
+}
+
 }
 
