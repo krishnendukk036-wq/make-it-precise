@@ -586,3 +586,53 @@ footer a {
   margin-bottom: 16px;
   object-fit: contain;
 }
+/* MIP — Elegant Horizontal Footer */
+
+#footer {
+  padding: 55px 7% 30px;
+  text-align: center;
+}
+
+#footer > .eyebrow,
+#footer > h2,
+#footer > p:first-of-type {
+  text-align: center;
+}
+
+#footer > p:not(.eyebrow):not(.copyright) {
+  display: inline-block;
+  vertical-align: top;
+  width: 29%;
+  margin: 25px 1%;
+  text-align: center;
+  line-height: 2;
+  overflow-wrap: anywhere;
+}
+
+#footer > p strong {
+  display: block;
+  color: #c6a568;
+  margin-bottom: 8px;
+}
+
+#footer > p a {
+  display: inline-block;
+  color: #c6a568;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(198, 165, 104, 0.3);
+}
+
+@media (max-width: 650px) {
+  #footer > p:not(.eyebrow):not(.copyright) {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
