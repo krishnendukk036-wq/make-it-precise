@@ -695,3 +695,17 @@ a {
   font-size: 28px;
   line-height: 1.2;
 }
+/* Consistent country flags across devices */
+.country-card img {
+  display: block;
+  width: 42px;
+  height: 28px;
+  object-fit: cover;
+  border: 1px solid rgba(201, 170, 112, 0.45);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+.country-card > span {
+  display: none;
+}
