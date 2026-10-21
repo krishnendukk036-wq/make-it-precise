@@ -579,3 +579,10 @@ footer a {
     margin: 18px auto;
   }
 }
+.country-card img.country-flag {
+  display: block;
+  width: 40px;
+  height: auto;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
