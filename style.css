@@ -369,4 +369,124 @@ footer a {
 }
 
 }
+/* MIP — Final Desktop & Mobile Refinements */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Top contact banner */
+.top-contact-bar {
+  width: 100%;
+  padding: 11px 5%;
+  background: #102f26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.top-contact-bar a {
+  color: #f0d69c;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Make the logo readable on desktop */
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.topbar .brand img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Stronger brand name, slightly smaller hero slogan */
+.hero > .eyebrow {
+  font-size: clamp(19px, 2.2vw, 27px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.hero h1 {
+  font-size: clamp(39px, 4.8vw, 62px);
+  line-height: 1.2;
+}
+
+/* Center the international service cards */
+.global-services {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.global-services .section-heading {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.country-grid {
+  width: 100%;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: stretch;
+}
+
+.country-card {
+  width: 100%;
+  min-width: 0;
+}
+
+@media (min-width: 900px) {
+  .country-card:last-child {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 500px;
+    justify-self: center;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 650px) {
+  .top-contact-bar {
+    gap: 8px 16px;
+    padding: 10px 12px;
+  }
+
+  .top-contact-bar a {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+  }
+
+  .topbar .brand img {
+    width: 155px;
+  }
+
+  .hero > .eyebrow {
+    font-size: 17px;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 8vw, 42px);
+  }
+
+  .global-services {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
 
