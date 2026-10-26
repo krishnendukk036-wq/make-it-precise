@@ -935,11 +935,14 @@ gap: 14px;
 /* MIP Hero Photo */
 .hero-art.hero-photo {
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
+  aspect-ratio: auto;
   height: auto;
+  justify-self: center;
   margin: 0 auto;
-  border-radius: 18px;
+  display: block;
   overflow: hidden;
+  border-radius: 18px;
   background: transparent;
   box-shadow: none;
 }
@@ -954,10 +957,7 @@ gap: 14px;
 
 @media (max-width: 768px) {
   .hero-art.hero-photo {
+    width: 100%;
     max-width: 100%;
   }
-}
-.hero-art.hero-photo {
-  width: 100%;
-  max-width: 560px;
 }
