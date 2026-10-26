@@ -932,17 +932,21 @@ padding: 22px;
 gap: 14px;
 }
 }
+
 /* MIP Hero Photo */
 .hero-art.hero-photo {
   width: 100%;
-  max-width: 560px;
-  aspect-ratio: auto;
-  height: auto;
-  justify-self: center;
-  margin: 0 auto;
-  display: block;
+  max-width: none;
+  height: 100%;
+  min-height: 420px;
+  justify-self: stretch;
+  align-self: stretch;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 0;
   background: transparent;
   box-shadow: none;
 }
@@ -950,17 +954,33 @@ gap: 14px;
 .hero-art.hero-photo .hero-image {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 18px;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
 }
 
+/* Mobile layout */
 @media (max-width: 768px) {
   .hero-art.hero-photo {
     width: 100%;
     max-width: 100%;
+    height: auto;
+    min-height: 0;
+    border-radius: 14px;
+  }
+
+  .hero-art.hero-photo .hero-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 14px;
   }
 }
+
 /* MIP — Forest Green & Champagne Gold Services */
 
 .services-section {
