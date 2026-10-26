@@ -1481,3 +1481,99 @@ gap: 14px;
   border-color: #a88a50;
   opacity: 1;
 }
+/* MIP FINAL HERO LAYOUT FIX */
+
+@media (min-width: 769px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 0 !important;
+    padding: 0 0 28px 6% !important;
+    align-items: stretch !important;
+  }
+
+  .hero-copy {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    align-self: center;
+    min-width: 0;
+    padding: 55px 24px 55px 0 !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 5vw, 68px) !important;
+    line-height: 0.95;
+  }
+
+  .hero-art.hero-photo {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: 100% !important;
+    min-height: 580px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-self: stretch !important;
+    align-self: stretch !important;
+    overflow: hidden;
+    border-radius: 0 !important;
+  }
+
+  .hero-art.hero-photo .hero-image {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 580px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 0 !important;
+  }
+
+  .hero-bottom {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    margin-right: 6%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 24px !important;
+    padding: 45px 6% 24px !important;
+  }
+
+  .hero-copy {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    padding: 0 !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 10vw, 62px) !important;
+  }
+
+  .hero-art.hero-photo {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px !important;
+  }
+
+  .hero-art.hero-photo .hero-image {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+  }
+
+  .hero-bottom {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    margin-right: 0 !important;
+  }
+}
