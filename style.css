@@ -1481,8 +1481,7 @@ gap: 14px;
   border-color: #a88a50;
   opacity: 1;
 }
-}
-/* MIP — FINAL FULL-BACKGROUND PHOTO HERO */
+/* MIP — HERO PHOTO FULL BACKGROUND FIX */
 
 .hero {
   position: relative !important;
@@ -1495,19 +1494,19 @@ gap: 14px;
   min-height: 680px !important;
   padding: 45px 7% 28px !important;
   overflow: hidden !important;
-  background: var(--forest-deep) !important;
+  background: #0b2b22 !important;
 }
 
-/* Full photo layer */
+/* Full photo across the hero */
 .hero > .hero-art.hero-photo {
   position: absolute !important;
   inset: 0 !important;
-  z-index: -1 !important;
+  z-index: 0 !important;
   display: block !important;
   width: 100% !important;
   height: 100% !important;
-  min-height: 0 !important;
   max-width: none !important;
+  min-height: 0 !important;
   aspect-ratio: auto !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -1517,22 +1516,37 @@ gap: 14px;
   transform: none !important;
 }
 
-.hero > .hero-art.hero-photo .hero-image,
-.hero > .hero-art.hero-photo img {
+/* Make the image fill the entire area */
+.hero > .hero-art.hero-photo img.hero-image {
   position: absolute !important;
   inset: 0 !important;
   display: block !important;
   width: 100% !important;
   height: 100% !important;
-  min-height: 0 !important;
   max-width: none !important;
   max-height: none !important;
+  min-height: 0 !important;
   object-fit: cover !important;
-  object-position: center !important;
+  object-position: center center !important;
   border-radius: 0 !important;
 }
 
-/* Text above the photo */
+/* Gentle dark overlay for readable text */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 43, 34, 0.88) 0%,
+    rgba(11, 43, 34, 0.58) 48%,
+    rgba(11, 43, 34, 0.12) 100%
+  );
+}
+
+/* Keep website text above the photo */
 .hero > .hero-copy {
   position: relative !important;
   z-index: 2 !important;
@@ -1544,13 +1558,7 @@ gap: 14px;
   margin: 0 !important;
 }
 
-/* Smaller, elegant heading */
-.hero h1 {
-  font-size: clamp(40px, 4.5vw, 62px) !important;
-  line-height: 1.08 !important;
-}
-
-/* Bottom text above the photo */
+/* Keep the bottom service labels visible */
 .hero > .hero-bottom {
   position: relative !important;
   z-index: 2 !important;
@@ -1560,7 +1568,11 @@ gap: 14px;
   margin: 0 !important;
 }
 
-/* Mobile */
+.hero h1 {
+  font-size: clamp(40px, 4.5vw, 62px) !important;
+  line-height: 1.08 !important;
+}
+
 @media (max-width: 768px) {
   .hero {
     min-height: 650px !important;
@@ -1579,3 +1591,4 @@ gap: 14px;
   .hero > .hero-bottom {
     font-size: 8px !important;
   }
+}
