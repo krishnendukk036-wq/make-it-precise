@@ -1592,3 +1592,37 @@ gap: 14px;
     font-size: 8px !important;
   }
 }
+/* MIP — Move Hero Text to the Right, Keep Full Photo */
+
+@media (min-width: 769px) {
+  .hero {
+    position: relative !important;
+  }
+
+  .hero > .hero-copy {
+    position: relative !important;
+    z-index: 2 !important;
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+    align-self: center !important;
+    width: 46% !important;
+    max-width: 540px !important;
+    margin-right: 0 !important;
+    padding: 25px 0 !important;
+  }
+
+  .hero > .hero-bottom {
+    position: relative !important;
+    z-index: 2 !important;
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero > .hero-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
