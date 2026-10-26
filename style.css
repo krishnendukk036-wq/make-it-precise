@@ -1577,3 +1577,111 @@ gap: 14px;
     margin-right: 0 !important;
   }
 }
+/* MIP — Full Photo Hero with Text Overlay */
+
+.hero {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: 1fr auto !important;
+  gap: 0 !important;
+  min-height: 680px !important;
+  padding: 0 6% 30px !important;
+  overflow: hidden !important;
+  isolation: isolate;
+  align-items: center !important;
+}
+
+/* Spread the mug photo across the entire hero */
+.hero-art.hero-photo {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  aspect-ratio: auto !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+}
+
+.hero-art.hero-photo img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 0 !important;
+}
+
+/* Text displayed over the photo */
+.hero-copy {
+  position: relative !important;
+  z-index: 2 !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  max-width: 560px !important;
+  padding: 65px 0 45px !important;
+  margin: 0 !important;
+}
+
+/* Keep the main heading elegant */
+.hero h1 {
+  font-size: clamp(40px, 4.5vw, 62px) !important;
+  line-height: 1.08 !important;
+}
+
+/* Keep the supporting text readable */
+.hero-copy p,
+.hero-copy h2,
+.hero-copy h3 {
+  max-width: 520px;
+}
+
+/* Keep the lower hero content above the image */
+.hero-bottom {
+  position: relative !important;
+  z-index: 2 !important;
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 650px !important;
+    grid-template-columns: 1fr !important;
+    padding: 0 6% 24px !important;
+  }
+
+  .hero-art.hero-photo {
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .hero-art.hero-photo img {
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  .hero-copy {
+    max-width: 100% !important;
+    padding: 50px 0 35px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 9vw, 52px) !important;
+  }
+
+  .hero-bottom {
+    margin: 0 !important;
+  }
+}
