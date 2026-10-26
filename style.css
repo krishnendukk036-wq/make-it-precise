@@ -1700,3 +1700,10 @@ gap: 14px;
     text-align: left !important;
   }
 }
+/* Move Hero Text Slightly Down */
+
+@media (min-width: 769px) {
+  .hero > .hero-copy {
+    transform: translateY(45px) !important;
+  }
+}
