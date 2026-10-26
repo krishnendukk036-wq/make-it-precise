@@ -1481,170 +1481,77 @@ gap: 14px;
   border-color: #a88a50;
   opacity: 1;
 }
-/* MIP FINAL HERO LAYOUT FIX */
-
-@media (min-width: 769px) {
-  .hero {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    gap: 0 !important;
-    padding: 0 0 28px 6% !important;
-    align-items: stretch !important;
-  }
-
-  .hero-copy {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
-    align-self: center;
-    min-width: 0;
-    padding: 55px 24px 55px 0 !important;
-  }
-
-  .hero h1 {
-    font-size: clamp(44px, 5vw, 68px) !important;
-    line-height: 0.95;
-  }
-
-  .hero-art.hero-photo {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-    width: 100% !important;
-    max-width: none !important;
-    height: 100% !important;
-    min-height: 580px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    justify-self: stretch !important;
-    align-self: stretch !important;
-    overflow: hidden;
-    border-radius: 0 !important;
-  }
-
-  .hero-art.hero-photo .hero-image {
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 580px !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    border-radius: 0 !important;
-  }
-
-  .hero-bottom {
-    grid-column: 1 / -1 !important;
-    grid-row: 2 !important;
-    margin-right: 6%;
-  }
 }
-
-@media (max-width: 768px) {
-  .hero {
-    grid-template-columns: minmax(0, 1fr) !important;
-    gap: 24px !important;
-    padding: 45px 6% 24px !important;
-  }
-
-  .hero-copy {
-    grid-column: 1 !important;
-    grid-row: auto !important;
-    padding: 0 !important;
-  }
-
-  .hero h1 {
-    font-size: clamp(44px, 10vw, 62px) !important;
-  }
-
-  .hero-art.hero-photo {
-    grid-column: 1 !important;
-    grid-row: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    aspect-ratio: 4 / 3;
-    border-radius: 12px !important;
-  }
-
-  .hero-art.hero-photo .hero-image {
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 0 !important;
-    object-fit: cover !important;
-    border-radius: 12px !important;
-  }
-
-  .hero-bottom {
-    grid-column: 1 !important;
-    grid-row: auto !important;
-    margin-right: 0 !important;
-  }
-}
-/* MIP — Full Photo Hero with Text Overlay */
+/* MIP — FINAL FULL-BACKGROUND PHOTO HERO */
 
 .hero {
   position: relative !important;
+  isolation: isolate;
   display: grid !important;
-  grid-template-columns: 1fr !important;
+  grid-template-columns: minmax(0, 1fr) !important;
   grid-template-rows: 1fr auto !important;
+  align-items: center !important;
   gap: 0 !important;
   min-height: 680px !important;
-  padding: 0 6% 30px !important;
+  padding: 45px 7% 28px !important;
   overflow: hidden !important;
-  isolation: isolate;
-  align-items: center !important;
+  background: var(--forest-deep) !important;
 }
 
-/* Spread the mug photo across the entire hero */
-.hero-art.hero-photo {
+/* Full photo layer */
+.hero > .hero-art.hero-photo {
   position: absolute !important;
   inset: 0 !important;
   z-index: -1 !important;
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 0 !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  aspect-ratio: auto !important;
-  border-radius: 0 !important;
-  overflow: hidden !important;
-}
-
-.hero-art.hero-photo img {
   display: block !important;
   width: 100% !important;
   height: 100% !important;
   min-height: 0 !important;
+  max-width: none !important;
+  aspect-ratio: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+  transform: none !important;
+}
+
+.hero > .hero-art.hero-photo .hero-image,
+.hero > .hero-art.hero-photo img {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
   object-fit: cover !important;
-  object-position: center center !important;
+  object-position: center !important;
   border-radius: 0 !important;
 }
 
-/* Text displayed over the photo */
-.hero-copy {
+/* Text above the photo */
+.hero > .hero-copy {
   position: relative !important;
   z-index: 2 !important;
   grid-column: 1 !important;
   grid-row: 1 !important;
   width: 100% !important;
   max-width: 560px !important;
-  padding: 65px 0 45px !important;
+  padding: 35px 0 !important;
   margin: 0 !important;
 }
 
-/* Keep the main heading elegant */
+/* Smaller, elegant heading */
 .hero h1 {
   font-size: clamp(40px, 4.5vw, 62px) !important;
   line-height: 1.08 !important;
 }
 
-/* Keep the supporting text readable */
-.hero-copy p,
-.hero-copy h2,
-.hero-copy h3 {
-  max-width: 520px;
-}
-
-/* Keep the lower hero content above the image */
-.hero-bottom {
+/* Bottom text above the photo */
+.hero > .hero-bottom {
   position: relative !important;
   z-index: 2 !important;
   grid-column: 1 !important;
@@ -1653,83 +1560,23 @@ gap: 14px;
   margin: 0 !important;
 }
 
-/* Mobile layout */
+/* Mobile */
 @media (max-width: 768px) {
   .hero {
     min-height: 650px !important;
-    grid-template-columns: 1fr !important;
-    padding: 0 6% 24px !important;
+    padding: 35px 6% 24px !important;
   }
 
-  .hero-art.hero-photo {
-    inset: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  .hero-art.hero-photo img {
-    object-fit: cover !important;
-    object-position: center center !important;
-  }
-
-  .hero-copy {
+  .hero > .hero-copy {
     max-width: 100% !important;
-    padding: 50px 0 35px !important;
+    padding: 25px 0 !important;
   }
 
   .hero h1 {
     font-size: clamp(36px, 9vw, 52px) !important;
   }
 
-  .hero-bottom {
-    margin: 0 !important;
-  }
-}
-/* MIP PHOTO VISIBILITY FIX */
-
-.hero {
-  position: relative !important;
-  overflow: hidden !important;
-  min-height: 680px !important;
-}
-
-.hero-art.hero-photo {
-  position: absolute !important;
-  top: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  min-height: 0 !important;
-  transform: none !important;
-  z-index: 0 !important;
-}
-
-.hero-art.hero-photo img {
-  display: block !important;
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  object-fit: contain !important;
-  object-position: center !important;
-}
-
-.hero-copy,
-.hero-bottom {
-  position: relative !important;
-  z-index: 2 !important;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    min-height: 650px !important;
-  }
-
-  .hero-art.hero-photo img {
-    object-fit: contain !important;
+  .hero > .hero-bottom {
+    font-size: 8px !important;
   }
 }
