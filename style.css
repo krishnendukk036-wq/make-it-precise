@@ -1429,3 +1429,9 @@ gap: 14px;
 .contact-section p {
   color: #0b2b22;
 }
+/* Sharper text in the Contact section */
+.contact-section p {
+  color: #123d30;
+  opacity: 1;
+  font-weight: 500;
+}
