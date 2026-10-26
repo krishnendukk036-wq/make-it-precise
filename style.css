@@ -1411,3 +1411,21 @@ gap: 14px;
     gap: 12px;
   }
 }
+/* CONTACT SECTION — CHAMPAGNE BEIGE */
+.contact-section {
+  background: #f7f3e9;
+  color: #0b2b22;
+}
+
+.contact-section .eyebrow {
+  color: #8c713e;
+}
+
+.contact-section h2,
+.contact-section h2 em {
+  color: #123d30;
+}
+
+.contact-section p {
+  color: #0b2b22;
+}
