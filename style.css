@@ -1626,18 +1626,18 @@ gap: 14px;
     max-width: 100% !important;
   }
 }
-/* MIP — Final Hero Text Layout */
+
+/* MIP — Hero Text Left Alignment */
 
 @media (min-width: 769px) {
   .hero {
     position: relative !important;
     display: grid !important;
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: 1fr !important;
     grid-template-rows: 1fr auto !important;
     isolation: isolate;
   }
 
-  /* Keep the full-width photo unchanged */
   .hero > .hero-art.hero-photo {
     position: absolute !important;
     inset: 0 !important;
@@ -1652,32 +1652,28 @@ gap: 14px;
     object-fit: cover !important;
   }
 
-  /* Position text on the right */
   .hero > .hero-copy {
     grid-column: 1 !important;
     grid-row: 1 !important;
-    justify-self: end !important;
+    justify-self: start !important;
     align-self: center !important;
     width: 44% !important;
     max-width: 540px !important;
-    padding: 25px 0 !important;
+    padding: 25px 0 25px 5% !important;
     margin: 0 !important;
     position: relative !important;
     z-index: 2 !important;
+    text-align: left !important;
   }
 
-  /* Remove the repeated title and tagline from the overlay */
   .hero > .hero-copy h1,
   .hero > .hero-copy .tagline {
-    display: none !important;
+    display: block !important;
   }
 
-  /* Keep the eyebrow as the right-side heading */
   .hero > .hero-copy .eyebrow {
     display: block !important;
-    font-size: 10px !important;
-    letter-spacing: 3px !important;
-    margin-bottom: 22px !important;
+    font-style: normal !important;
   }
 
   .hero > .hero-copy .hero-description {
@@ -1701,5 +1697,6 @@ gap: 14px;
   .hero > .hero-copy {
     width: 100% !important;
     max-width: 100% !important;
+    text-align: left !important;
   }
 }
