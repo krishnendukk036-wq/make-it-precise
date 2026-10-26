@@ -1228,3 +1228,39 @@ gap: 14px;
     width: 125px;
   }
 }
+/* HOW WE WORK — Beige background with green text */
+.services-section .service-delivery {
+  background: #f7f3e9;
+  color: #0b2b22;
+  border-radius: 12px;
+  padding: 36px 28px;
+  margin-top: 50px;
+}
+
+.services-section .service-delivery h2,
+.services-section .service-delivery h3 {
+  color: #0b2b22;
+}
+
+.services-section .service-delivery .section-label {
+  color: #8c713e;
+}
+
+.services-section .service-delivery .delivery-intro,
+.services-section .service-delivery .delivery-card p {
+  color: #0b2b22;
+}
+
+.services-section .service-delivery .delivery-card {
+  background: #fffdf7;
+  border: 1px solid #c9aa70;
+  border-radius: 10px;
+}
+
+.services-section .service-delivery .delivery-icon {
+  color: #8c713e;
+}
+
+.services-section .service-delivery .delivery-tag {
+  color: #725a30;
+}
