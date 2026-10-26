@@ -9,7 +9,7 @@
 --line: rgba(201, 170, 112, 0.35);
 }
 
-- {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -959,5 +959,5 @@ gap: 14px;
 }
 .hero-art.hero-photo {
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
 }
