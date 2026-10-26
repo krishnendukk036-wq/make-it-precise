@@ -1626,3 +1626,80 @@ gap: 14px;
     max-width: 100% !important;
   }
 }
+/* MIP — Final Hero Text Layout */
+
+@media (min-width: 769px) {
+  .hero {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: 1fr auto !important;
+    isolation: isolate;
+  }
+
+  /* Keep the full-width photo unchanged */
+  .hero > .hero-art.hero-photo {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .hero > .hero-art.hero-photo img.hero-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Position text on the right */
+  .hero > .hero-copy {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+    align-self: center !important;
+    width: 44% !important;
+    max-width: 540px !important;
+    padding: 25px 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+  /* Remove the repeated title and tagline from the overlay */
+  .hero > .hero-copy h1,
+  .hero > .hero-copy .tagline {
+    display: none !important;
+  }
+
+  /* Keep the eyebrow as the right-side heading */
+  .hero > .hero-copy .eyebrow {
+    display: block !important;
+    font-size: 10px !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .hero > .hero-copy .hero-description {
+    max-width: 360px !important;
+  }
+
+  .hero > .hero-bottom {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero > .hero-copy h1,
+  .hero > .hero-copy .tagline {
+    display: block !important;
+  }
+
+  .hero > .hero-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
