@@ -932,3 +932,28 @@ padding: 22px;
 gap: 14px;
 }
 }
+/* MIP Hero Photo */
+.hero-art.hero-photo {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: none;
+}
+
+.hero-art.hero-photo .hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 18px;
+}
+
+@media (max-width: 768px) {
+  .hero-art.hero-photo {
+    max-width: 100%;
+  }
+}
