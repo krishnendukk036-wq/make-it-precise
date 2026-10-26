@@ -1103,3 +1103,11 @@ gap: 14px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+/* Forest Green Shadow Around Global Support Grid */
+
+.country-grid {
+  border: 1px solid #c9aa70;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(18, 61, 48, 0.28);
+}
