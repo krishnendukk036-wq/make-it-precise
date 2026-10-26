@@ -961,3 +961,77 @@ gap: 14px;
     max-width: 100%;
   }
 }
+/* MIP — Forest Green & Champagne Gold Services */
+
+.services-section {
+  background: #123d30;
+  color: #f7f3e9;
+}
+
+.services-heading h2,
+.service-delivery h2 {
+  color: #e0c995;
+}
+
+.services-heading > p,
+.delivery-intro {
+  color: #e2dfd2;
+}
+
+.section-label {
+  color: #e0c995;
+}
+
+.services-section .service-card {
+  background: #0b2b22;
+  border: 1px solid #c9aa70;
+  border-radius: 12px;
+}
+
+.services-section .service-card:hover {
+  background: #1b4b3b;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.services-section .service-number {
+  color: #e0c995;
+}
+
+.services-section .service-icon {
+  background: #c9aa70;
+  color: #0b2b22;
+}
+
+.services-section .service-card h3 {
+  color: #e0c995;
+}
+
+.services-section .service-card p {
+  color: #f0eee5;
+}
+
+.services-section .service-delivery {
+  border-top-color: rgba(201, 170, 112, 0.45);
+}
+
+.services-section .delivery-card {
+  background: #0b2b22;
+  border-color: #c9aa70;
+}
+
+.services-section .delivery-card h3 {
+  color: #e0c995;
+}
+
+.services-section .delivery-card p {
+  color: #f0eee5;
+}
+
+.services-section .delivery-icon {
+  background: #c9aa70;
+  color: #0b2b22;
+}
+
+.services-section .delivery-tag {
+  color: #e0c995;
+}
