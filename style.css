@@ -1213,3 +1213,18 @@ gap: 14px;
     min-height: 115px;
   }
 }
+/* MIP — Hero Logo */
+.hero-logo {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 0 22px;
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 125px;
+  }
+}
