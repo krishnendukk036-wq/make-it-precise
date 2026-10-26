@@ -1685,3 +1685,51 @@ gap: 14px;
     margin: 0 !important;
   }
 }
+/* MIP PHOTO VISIBILITY FIX */
+
+.hero {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 680px !important;
+}
+
+.hero-art.hero-photo {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  transform: none !important;
+  z-index: 0 !important;
+}
+
+.hero-art.hero-photo img {
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.hero-copy,
+.hero-bottom {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 650px !important;
+  }
+
+  .hero-art.hero-photo img {
+    object-fit: contain !important;
+  }
+}
