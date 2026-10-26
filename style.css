@@ -957,3 +957,6 @@ gap: 14px;
     max-width: 100%;
   }
 }
+.hero-art.hero-photo {
+  width: 100%;
+  max-width: 480px;
