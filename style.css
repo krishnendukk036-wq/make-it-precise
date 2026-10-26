@@ -1264,3 +1264,150 @@ gap: 14px;
 .services-section .service-delivery .delivery-tag {
   color: #725a30;
 }
+/* =========================================
+   MIP SECTION LAYOUT CORRECTIONS
+   ========================================= */
+
+/* HOW WE WORK — independent, full-width beige section */
+.how-we-work {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: #f7f3e9;
+  color: #0b2b22;
+  padding: 70px 6%;
+  margin: 0;
+  border-radius: 0;
+}
+
+.how-we-work h2 {
+  color: #123d30;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.how-we-work .section-label {
+  color: #8c713e;
+}
+
+.how-we-work .delivery-intro {
+  color: #0b2b22;
+  margin-bottom: 30px;
+}
+
+.how-we-work .delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.how-we-work .delivery-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  box-sizing: border-box;
+  padding: 28px;
+  background: #fffdf7;
+  border: 1px solid #c9aa70;
+  border-radius: 10px;
+  color: #0b2b22;
+}
+
+.how-we-work .delivery-card h3 {
+  color: #123d30;
+  margin-top: 0;
+}
+
+.how-we-work .delivery-card p {
+  color: #0b2b22;
+}
+
+.how-we-work .delivery-icon {
+  color: #8c713e;
+}
+
+.how-we-work .delivery-tag {
+  color: #725a30;
+}
+
+/* GLOBAL SUPPORT — full-width forest green */
+.global {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: #123d30;
+  color: #f7f3e9;
+  margin: 0;
+  border-radius: 0;
+}
+
+.global .eyebrow {
+  color: #e0c995;
+}
+
+.global h2,
+.global h2 em {
+  color: #e0c995;
+}
+
+.global .global-description {
+  color: #f7f3e9;
+}
+
+/* Country cards remain beige */
+.global .country-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.global .country-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-sizing: border-box;
+  padding: 22px 12px;
+  min-width: 0;
+  background: #f7f3e9;
+  border: 1px solid #c9aa70;
+  border-radius: 10px;
+  color: #123d30;
+  text-align: center;
+}
+
+.global .country-item span {
+  color: #123d30;
+}
+
+.global .country-flag-img {
+  display: block;
+  width: 38px;
+  height: 26px;
+  object-fit: cover;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .how-we-work {
+    padding: 48px 6%;
+  }
+
+  .how-we-work .delivery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .how-we-work .delivery-card {
+    padding: 22px;
+  }
+
+  .global .country-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
