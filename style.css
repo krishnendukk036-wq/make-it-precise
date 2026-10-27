@@ -1764,3 +1764,11 @@ gap: 14px;
   cursor: pointer;
   pointer-events: auto !important;
 }
+/* Make the Get in Touch button clickable */
+#contact a.gold-button {
+  display: inline-flex !important;
+  position: relative !important;
+  z-index: 999 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
