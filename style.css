@@ -1711,7 +1711,7 @@ gap: 14px;
 
 .hero > .hero-art.hero-photo img.hero-image {
   filter: brightness(1.08) contrast(1.02) !important;
-
+}
 /* Brand name */
 .hero > .hero-copy .hero-brand-title {
   display: block !important;
@@ -1771,4 +1771,38 @@ gap: 14px;
   z-index: 999 !important;
   pointer-events: auto !important;
   cursor: pointer !important;
+}
+/* MIP — Refined Hero Brand Spacing */
+
+.hero > .hero-copy .hero-brand-title {
+  margin: 0 0 5px !important;
+  line-height: 1.05 !important;
+}
+
+.hero > .hero-copy .tagline {
+  margin: 0 0 12px !important;
+  line-height: 1.8 !important;
+}
+
+.hero > .hero-copy .eyebrow {
+  margin: 0 !important;
+  line-height: 1.8 !important;
+}
+
+.hero > .hero-copy .gold-line {
+  margin: 25px 0 !important;
+}
+
+@media (max-width: 768px) {
+  .hero > .hero-copy {
+    transform: none !important;
+  }
+
+  .hero > .hero-copy .hero-brand-title {
+    margin-bottom: 5px !important;
+  }
+
+  .hero > .hero-copy .tagline {
+    margin-bottom: 12px !important;
+  }
 }
